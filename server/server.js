@@ -14,7 +14,7 @@ const allowedOrigins = ['https://mern-auth-system-nine.vercel.app', 'http://loca
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({origin: allowedOrigins ,credentials: true}));
+app.use(cors({origin: '*', credentials: true}));
 
 // api endpoint 
 app.get('/', (req, res) => {
